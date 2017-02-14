@@ -1,68 +1,638 @@
-<!DOCTYPE HTML>
-<!--
-	Fractal by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>ResearchX 3D Printing and Scanning</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		<script>
-			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ResearchX Development - 3D Printing and Scanning</title>
+<meta name="description" content="ResearchX Development - 3D Printing and Scanning">
+<meta name="author" content="WebWire">
 
-			ga('create', 'UA-71764958-2', 'auto');
-			ga('send', 'pageview');
+<!-- FONTS ONLINE -->
+<link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
-		</script>
-		<script src="//load.sumome.com/" data-sumo-site-id="619ee7ce5fc4726b4af6bc8b82184dc2e765130885c93a25c59f7c1d53e28500" async="async"></script>
-	</head>
-	<body id="top">
+<!--MAIN STYLE-->
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/responsive.css" rel="stylesheet" type="text/css">
+<link href="css/animate.css" rel="stylesheet" type="text/css">
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<!-- ADD YOUR OWN STYLING HERE. AVOID TO USE STYLE.CSS AND MAIN.CSS. IT WILL BE HELPFUL FOR YOU IN FUTURE UPDATES -->
+<link href="css/custom.css" rel="stylesheet" type="text/css">
 
-		<!-- Header -->
-			<header id="header">
-				<div class="content">
-					<h1><a href="http://www.researchx.ro">3D Printing &amp; Scanning</a></h1>
-					<p>Folosind modele digitale tridimensionale dam viata inventiilor, <br /> cream prototipuri si modele cu aplicabilitate in nenumarate domenii.</p>
-					<p>
-						<span class="icon fa-phone"> +40732.746.381</span>
-					</p>
-					<ul class="icons">
-						<li><a href="https://www.facebook.com/ResearchX" target="_blank" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-						<li><a href="https://twitter.com/Researchxdvlp" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="https://www.instagram.com/researchxdvlp/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="https://uk.pinterest.com/researchxdvlp/" class="icon fa-pinterest"><span class="label">Pinterest</span></a></li>
-						<li><a href="mailto:valentinsava@gmail.com" class="icon fa-envelope-square"><span class="label">E-mail</span></a></li>
-					</ul>
-					<ul class="actions">
-						<li><a href="/public/lista-preturi.pdf" target="_blank" class="button special icon fa-download">Descaraca brosura de servicii</a></li>
-					</ul>
-					<ul style="list-style: none;">
-						<li>Home &amp; Design</li>
-						<li>Bookish Stuff</li>
-						<li>Hobby</li>
-						<li>Jewelry</li>
-						<li>Health &amp; Care</li>
-						<li>Research &amp; Development</li>
-					</ul>
-				</div>
-				<div class="image phone"><div class="inner" style="background-color: white;"><img src="images/logo.jpg" alt="ResearchX Logo" /></div></div>
-			</header>
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
+<!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
+<link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen" />
 
-	</body>
+<!-- JavaScripts -->
+<script src="js/modernizr.js"></script>
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+<!-- LOADER ===========================================-->
+<div id="loader">
+  <div class="loader">
+    <div class="position-center-center"> <img src="images/logo-dark.png" alt="">
+      <p class="font-playfair text-center">Please Wait...</p>
+      <div class="loading">
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Page Wrap -->
+<div id="wrap" class="furniture"> 
+  
+  <!-- Header -->
+  <header class="header header-dark"> 
+    <!-- Top Bar -->
+    <div class="top-bar">
+      <div class="container"> 
+        <!-- Language -->
+        <div class="language"> <a href="#." class="active">EN</a></div>
+        <div class="top-links">
+          <ul>
+            <li><a href="coming-soon.html">MY ACCOUNT</a></li>
+            <li><a href="coming-soon.html">MY WISHLIST</a></li>
+            <li class="font-montserrat">CURRENCY:
+              <select class="selectpicker">
+                <option>EURO</option>
+                <option>RON</option>
+              </select>
+            </li>
+          </ul>
+          <!-- Social Icons -->
+          <ul class="social_icons">
+            <li class="facebook"><a href="https://www.facebook.com/ResearchX"> <i class="fa fa-facebook"></i></a></li>
+            <li class="twitter"><a href="https://twitter.com/Researchxdvlp"> <i class="fa fa-twitter"></i></a></li>
+            <li class="instagram"><a href="https://www.instagram.com/researchxdvlp/"> <i class="fa fa-instagram"></i></a></li>
+            <li class="pinterest"><a href="https://uk.pinterest.com/researchxdvlp/"> <i class="fa fa-pinterest"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Logo -->
+    <div class="container">
+      <div class="logo"> <a href="index.html"><img src="images/logo-dark.png" alt=""></a> </div>
+    </div>
+    
+    <!-- Nav -->
+    <div class="sticky">
+      <div class="container">
+        <!-- Nav -->
+        <nav class="webimenu"> 
+          <!-- MENU BUTTON RESPONSIVE -->
+          <div class="menu-toggle"> <i class="fa fa-bars"> </i> </div>
+          <ul class="ownmenu">
+            <li class="active"><a href="index.html">HOME</a></li>
+            <li><a href="05-about-us-01.html">ABOUT US</a></li>
+            <li><a href="02-shop-sidebar-right.html">SHOP</a></li>
+            <li><a href="07-faqs-page.html">SERVICES</a></li>
+            <li><a href="09-01-portfolio-grid.html">OUR WORK </a></li>
+            <li><a href="04-contact-01.html">CONTACT</a></li>
+            
+            <!--======= Shopping Cart =========-->
+            <li class="shop-cart"><a href="#."><i class="fa fa-shopping-cart"></i></a> <span class="numb">0</span>
+              <ul class="dropdown">
+                <li>
+                  <h5 class="text-center">Your cart is empty</h5>
+                </li>
+                <li class="no-padding no-border">
+                  <h5 class="text-center">SUBTOTAL: 0.00 EURO</h5>
+                </li>
+                <li class="no-padding no-border">
+                  <div class="row">
+                    <div class="col-xs-6"> <a href="#." class="btn btn-small">VIEW CART</a></div>
+                    <div class="col-xs-6 "> <a href="#." class="btn btn-1 btn-small">CHECK OUT</a></div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <!--======= SEARCH ICON =========-->
+            <li class="search-nav"><a href="#."><i class="fa fa-search"></i></a>
+              <ul class="dropdown">
+                <li class="row">
+                  <div class="col-sm-4 no-padding">
+                    <select class="selectpicker">
+                      <option>ALL</option>
+                      <option>HOME &amp; DESIGN</option>
+                      <option>BOOKISH STUFF</option>
+                      <option>HOBBY</option>
+                      <option>JEWELRY</option>
+                      <option>MEDICAL</option>
+                      <option>RESEARCH &amp; DEVELOPMENT</option>
+                    </select>
+                  </div>
+                  <div class="col-sm-8 no-padding">
+                    <input type="search" class="form-control" placeholder="Search Here">
+                    <button type="submit"> <i class="fa fa-search"></i> </button>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- Header End --> 
+  
+  <!--======= HOME MAIN SLIDER =========-->
+  <section class="home-slider">
+    <div class="tp-banner-container">
+      <div class="tp-banner">
+        <ul>
+          
+          <!-- Slider 1 -->
+          <li data-transition="fade" data-slotamount="7"> <img src="images/slides/slide-17.jpg" data-bgposition="center top" alt="" />
+            <div class="tp-caption sfr tp-resizeme" 
+                  data-x="right" 
+                  data-y="300"
+                  data-speed="700" 
+                  data-start="1000" 
+                  data-easing="easeOutBack"
+                  data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" 
+                  data-splitin="none" 
+                  data-splitout="none" 
+                  data-elementdelay="0.1" 
+                  data-endelementdelay="0.1" 
+                  data-endspeed="300" 
+                  data-captionhidden="on"><img src="images/slides/slide-17-2.png"  alt="" > </div>
+            
+            <!-- Layer -->
+            <div class="tp-caption sfb  font-montserrat text-center tp-resizeme" 
+                  data-x="left" 
+                  data-y="center" 
+                  data-speed="700" 
+                  data-start="1200" 
+                  data-easing="easeOutBack"
+                  data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" 
+                  data-splitin="none" 
+                  data-splitout="none" 
+                  data-elementdelay="0.1" 
+                  data-endelementdelay="0.1" 
+                  data-endspeed="300" 
+                  data-captionhidden="on" 
+                  style="color: #272727; font-size: 30px;"> Give contour to your imagination </div>
+            
+            <!-- Layer -->
+            <div class="tp-caption sfb  font-montserrat no-space text-left tp-resizeme" 
+                  data-x="left" 
+                  data-y="center" data-voffset="80" 
+                  data-speed="700" 
+                  data-start="1600" 
+                  data-easing="easeOutBack"
+                  data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" 
+                  data-splitin="none" 
+                  data-splitout="none" 
+                  data-elementdelay="0.1" 
+                  data-endelementdelay="0.1" 
+                  data-endspeed="300" 
+                  data-captionhidden="on" 
+                  style="color: #959595; font-size: 12px; line-height:24px;"> Make your projects come true! Ever thought of that perfect toy or figurine 
+                  <br />but couldn't find it anywhere? 
+                  <br />We can help you give contour to your imagination.</div>
+            
+            <!-- Layer -->
+            <div class="tp-caption sfb tp-resizeme" 
+                  data-x="left" 
+                  data-y="500" 
+                  data-speed="700" 
+                  data-start="2000" 
+                  data-easing="easeOutBack"
+                  data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" 
+                  data-splitin="none" 
+                  data-splitout="none" 
+                  data-elementdelay="0.1" 
+                  data-endelementdelay="0.1" 
+                  data-endspeed="300" 
+                  data-captionhidden="on"> <a href="09-01-portfolio-grid.html" class="btn btn-small btn-dark">View More</a> </div>
+          </li>
+          
+          <!-- Slider 2 -->
+          <li data-transition="fade" data-slotamount="7"> <img src="images/slides/slide-18.jpg" data-bgposition="center top" alt="" /> 
+            <!-- Layer -->
+            <div class="tp-caption sfr tp-resizeme" 
+                  data-x="right" 
+                  data-y="top"
+                  data-speed="700" 
+                  data-start="1000" 
+                  data-easing="easeOutBack"
+                  data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" 
+                  data-splitin="none" 
+                  data-splitout="none" 
+                  data-elementdelay="0.1" 
+                  data-endelementdelay="0.1" 
+                  data-endspeed="300" 
+                  data-captionhidden="on"><img src="images/slides/slide-18-1.png"  alt="" > </div>
+            
+            <!-- Layer -->
+            <div class="tp-caption sfb text-uppercase font-montserrat text-center tp-resizeme" 
+                  data-x="left" 
+                  data-y="center" 
+                  data-speed="700" 
+                  data-start="1200" 
+                  data-easing="easeOutBack"
+                  data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" 
+                  data-splitin="none" 
+                  data-splitout="none" 
+                  data-elementdelay="0.1" 
+                  data-endelementdelay="0.1" 
+                  data-endspeed="300" 
+                  data-captionhidden="on" 
+                  style="color: #272727; font-size: 24px; font-weight:bold;"> Give style to your personal space </div>
+            
+            <!-- Layer -->
+            <div class="tp-caption sfb  font-montserrat no-space text-left tp-resizeme" 
+                  data-x="left" 
+                  data-y="center" data-voffset="50" 
+                  data-speed="700" 
+                  data-start="1600" 
+                  data-easing="easeOutBack"
+                  data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" 
+                  data-splitin="none" 
+                  data-splitout="none" 
+                  data-elementdelay="0.1" 
+                  data-endelementdelay="0.1" 
+                  data-endspeed="300" 
+                  data-captionhidden="on" 
+                  style="color: #959595; font-size: 12px; line-height:24px;"> Add a personal touch to your home or office. We can help you express yourself <br>
+              using your style while keeping it useful at the same time! </div>
+            
+            <!-- Layer -->
+            <div class="tp-caption sfb tp-resizeme" 
+                  data-x="left" 
+                  data-y="450" 
+                  data-speed="700" 
+                  data-start="2000" 
+                  data-easing="easeOutBack"
+                  data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" 
+                  data-splitin="none" 
+                  data-splitout="none" 
+                  data-elementdelay="0.1" 
+                  data-endelementdelay="0.1" 
+                  data-endspeed="300" 
+                  data-captionhidden="on"> <a href="09-01-portfolio-grid.html" class="btn btn-small btn-dark">View More</a> </div>
+          </li>
+          
+          <!-- Slider 3 -->
+          <li data-transition="fade" data-slotamount="7"> <img src="images/slides/slide-19.jpg" data-bgposition="center top" alt="" /> 
+            
+            <!-- Layer -->
+            <div class="tp-caption sfb text-uppercase font-montserrat text-center tp-resizeme" 
+                  data-x="center" 
+                  data-y="center" 
+                  data-speed="700" 
+                  data-start="1200" 
+                  data-easing="easeOutBack"
+                  data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" 
+                  data-splitin="none" 
+                  data-splitout="none" 
+                  data-elementdelay="0.1" 
+                  data-endelementdelay="0.1" 
+                  data-endspeed="300" 
+                  data-captionhidden="on" 
+                  style="color: #272727; font-size: 60px; font-weight:bold;"> Richer gaming experience </div>
+            
+            <!-- Layer -->
+            <div class="tp-caption sfb text-uppercase font-montserrat no-space text-left tp-resizeme" 
+                  data-x="center" 
+                  data-y="center" data-voffset="70" 
+                  data-speed="700" 
+                  data-start="1600" 
+                  data-easing="easeOutBack"
+                  data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" 
+                  data-splitin="none" 
+                  data-splitout="none" 
+                  data-elementdelay="0.1" 
+                  data-endelementdelay="0.1" 
+                  data-endspeed="300" 
+                  data-captionhidden="on" 
+                  style="color: #959595; font-size: 12px; line-height:24px;"> Either a board game, a tabletop game or even pen &amp; paper! <br />
+                  Indifferent of your favorite game, you can enrich your experience by bringing more 3D to the table.</div>
+            
+            <!-- Layer -->
+            <div class="tp-caption sfb tp-resizeme" 
+                  data-x="center" 
+                  data-y="500" 
+                  data-speed="700" 
+                  data-start="2000" 
+                  data-easing="easeOutBack"
+                  data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" 
+                  data-splitin="none" 
+                  data-splitout="none" 
+                  data-elementdelay="0.1" 
+                  data-endelementdelay="0.1" 
+                  data-endspeed="300" 
+                  data-captionhidden="on"> <a href="09-01-portfolio-grid.html" class="btn btn-small btn-dark">View More</a> </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+  <!-- CONTENT START -->
+  <div class="content"> 
+    
+    <!--======= FURNITURE LARGE =========-->
+    <section class="furniture-large animate fadeInUp" data-wow-delay="0.4s">
+      <div class="fur-slide"> 
+        
+        <!--  ITEM 1 -->
+        <div class="item"> <img src="images/furniture/large-img-1.jpg" alt="" >
+          <div class="item-inn">
+            <div class="item-hover">
+              <div class="position-center-center text-center">
+                <h3>Art and Decorations</h3>
+                <p>View our pre-designed products from arts and decorations. Don't find what you want? Send us your design and we'll turn it into a tangible decoration.</p>
+                <a href="02-shop-sidebar-right.htm" class="btn btn-small">SHOP NOW</a> </div>
+            </div>
+          </div>
+        </div>
+        
+        <!--  ITEM 2 -->
+        <div class="item"> <img src="images/furniture/large-img-2.jpg" alt="" >
+          <div class="item-inn">
+            <div class="item-hover">
+              <div class="position-center-center text-center">
+                <h3>Gaming Accessories</h3>
+                <p>View our pre-designed gaming accessories. Don't find what you want? Send us your design and we'll turn it into a tangible gaming accessory.</p>
+                <a href="02-shop-sidebar-right.htm" class="btn btn-small">SHOP NOW</a> </div>
+            </div>
+          </div>
+        </div>
+        
+        <!--  ITEM 1 -->
+        <div class="item"> <img src="images/furniture/large-img-1.jpg" alt="" >
+          <div class="item-inn">
+            <div class="item-hover">
+              <div class="position-center-center text-center">
+                <h3>Art and Decorations</h3>
+                <p>View our pre-designed products from arts and decorations. Don't find what you want? Send us your design and we'll turn it into a tangible decoration.</p>
+                <a href="02-shop-sidebar-right.htm" class="btn btn-small">SHOP NOW</a> </div>
+            </div>
+          </div>
+        </div>
+        
+        <!--  ITEM 2 -->
+        <div class="item"> <img src="images/furniture/large-img-2.jpg" alt="" >
+          <div class="item-inn">
+            <div class="item-hover">
+              <div class="position-center-center text-center">
+                <h3>Gaming Accessories</h3>
+                <p>View our pre-designed gaming accessories. Don't find what you want? Send us your design and we'll turn it into a tangible gaming accessory.</p>
+                <a href="02-shop-sidebar-right.htm" class="btn btn-small">SHOP NOW</a> </div>
+            </div>
+          </div>
+        </div>
+        
+        <!--  ITEM 1 -->
+        <div class="item"> <img src="images/furniture/large-img-1.jpg" alt="" >
+          <div class="item-inn">
+            <div class="item-hover">
+              <div class="position-center-center text-center">
+                <h3>Art and Decorations</h3>
+                <p>View our pre-designed products from arts and decorations. Don't find what you want? Send us your design and we'll turn it into a tangible decoration.</p>
+                <a href="02-shop-sidebar-right.htm" class="btn btn-small">SHOP NOW</a> </div>
+            </div>
+          </div>
+        </div>
+        
+        <!--  ITEM 2 -->
+        <div class="item"> <img src="images/furniture/large-img-2.jpg" alt="" >
+          <div class="item-inn">
+            <div class="item-hover">
+              <div class="position-center-center text-center">
+                <h3>Gaming Accessories</h3>
+                <p>View our pre-designed gaming accessories. Don't find what you want? Send us your design and we'll turn it into a tangible gaming accessory.</p>
+                <a href="02-shop-sidebar-right.htm" class="btn btn-small">SHOP NOW</a> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!--======= FURNITURE ITEMS =========-->
+    <section class="section-p-60px no-padding-b">
+      <div class="container"> 
+        <!--  Tittle -->
+        <div class="tittle tittle-2 animate fadeInUp" data-wow-delay="0.4s">
+          <h5>CATEGORIES</h5>
+          <hr>
+          <p>Our Services</p>
+        </div>
+      </div>
+      
+      <!-- ITEMS -->
+      <ul class="items-fer animate fadeInUp" data-wow-delay="0.4s">
+        <!-- ITEM -->
+        <li class="animate fadeInUp" data-wow-delay="0.2s">
+          <div class="item-inn"> 
+            <!-- ITEM IMAGE --> 
+            <img class="img-responsive" src="images/furniture/item-1.jpg" alt="" > 
+            <!-- HOVER -->
+            <div class="item-hover">
+              <div class="position-center-center"> <a class="zoom" href="images/furniture/item-1.jpg" data-lighter><i class="fa fa-search"></i></a> </div>
+              <!-- ITEM DETAILS -->
+              <div class="item-detail">
+                <h6>3D Scanning</h6>
+                <span class="font-montserrat">Small and large sized objects</span>
+                <div class="some-info" style="display: none;"><a href="07-faqs-page.html"><i class="ion-shuffle"></i></a> </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        
+        <!-- ITEM -->
+        <li class="animate fadeInUp" data-wow-delay="0.4s">
+          <div class="item-inn"> 
+            <!-- ITEM IMAGE --> 
+            <img class="img-responsive" src="images/furniture/item-2.jpg" alt="" > 
+            <!-- HOVER -->
+            <div class="item-hover">
+              <div class="position-center-center"> <a class="zoom" href="images/furniture/item-2.jpg" data-lighter><i class="fa fa-search"></i></a> </div>
+              <!-- ITEM DETAILS -->
+              <div class="item-detail">
+                <h6>3D Design and Wireframes</h6>
+                <span class="font-montserrat">We'll help you create your design</span>
+                <div class="some-info"><a href="07-faqs-page.html"><i class="ion-shuffle"></i></a> </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        
+        <!-- ITEM -->
+        <li class="animate fadeInUp" data-wow-delay="0.6s">
+          <div class="item-inn"> 
+            <!-- ITEM IMAGE --> 
+            <img class="img-responsive" src="images/furniture/item-3.jpg" alt="" > 
+            <!-- HOVER -->
+            <div class="item-hover">
+              <div class="position-center-center"> <a class="zoom" href="images/furniture/item-3.jpg" data-lighter><i class="fa fa-search"></i></a> </div>
+              <!-- ITEM DETAILS -->
+              <div class="item-detail">
+                <h6>3D Printing</h6>
+                <span class="font-montserrat">Various materials</span>
+                <div class="some-info"><a href="07-faqs-page.html"><i class="ion-shuffle"></i></a> </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        
+        <!-- ITEM -->
+        <li class="animate fadeInUp" data-wow-delay="0.8s">
+          <div class="item-inn"> 
+            <!-- ITEM IMAGE --> 
+            <img class="img-responsive" src="images/furniture/item-4.jpg" alt="" > 
+            <!-- HOVER -->
+            <div class="item-hover">
+              <div class="position-center-center"> <a class="zoom" href="images/furniture/item-4.jpg" data-lighter><i class="fa fa-search"></i></a> </div>
+              <!-- ITEM DETAILS -->
+              <div class="item-detail">
+                <h6>Laser Engraving</h6>
+                <span class="font-montserrat">On various surfaces</span>
+                <div class="some-info"><a href="07-faqs-page.html"><i class="ion-shuffle"></i></a> </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        
+        <!-- ITEM -->
+        <li class="animate fadeInUp" data-wow-delay="1s">
+          <div class="item-inn"> 
+            <!-- ITEM IMAGE --> 
+            <img class="img-responsive" src="images/furniture/item-5.jpg" alt="" > 
+            <!-- HOVER -->
+            <div class="item-hover">
+              <div class="position-center-center"> <a class="zoom" href="images/furniture/item-5.jpg" data-lighter><i class="fa fa-search"></i></a> </div>
+              <!-- ITEM DETAILS -->
+              <div class="item-detail">
+                <h6>CNC</h6>
+                <span class="font-montserrat">&nbsp;</span>
+                <div class="some-info"><a href="07-faqs-page.html"><i class="ion-shuffle"></i></a> </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        
+        
+      </ul>
+    </section>
+    
+    <!--======= PARALLAX SECTION =========-->
+    <section class="parallex parallex-fur animate fadeInUp" data-wow-delay="0.4s" data-stellar-background-ratio="0.5">
+      <div class="overlay">
+        <div class="container">
+          <h3>We specialize in giving contour to your imagination. If you have an ideea but you do not know how to get started please view our services section</h3>
+          <a href="07-faqs-page.html" class="btn">LEARN MORE</a> </div>
+      </div>
+    </section>
+  </div>
+  
+  <!--======= Footer =========-->
+  <footer>
+    <div class="container">
+      <div class="text-center"> <a href="#."><img src="images/logo.png" alt=""></a><br>
+        <img class="margin-t-40" src="images/hammer.png" alt="">
+        <p class="intro-small margin-t-40">Using tri-dimensional digital models we bring your inventions to life, we create prototypes with countless applications in various domains.</p>
+      </div>
+      
+      <!--  Footer Links -->
+      <div class="footer-link row">
+        <div class="col-md-6">
+          <ul>
+            
+            <!--  INFOMATION -->
+            <li class="col-sm-6">
+              <h5>INFOMATION</h5>
+              <ul class="f-links">
+                <li><a href="05-about-us-01.html">ABOUT US</a></li>
+                <li><a href="04-contact-01.html"> CONTACT US</a></li>
+                <li><a href="coming-soon.html"> TEMRS & CONDITIONS</a></li>
+              </ul>
+            </li>
+            
+            <!-- MY ACCOUNT -->
+            <li class="col-sm-6">
+              <h5>SHOP</h5>
+              <ul class="f-links">
+                <li><a href="02-shop-sidebar-right.html">HOME &amp; DESIGN</a></li>
+                <li><a href="02-shop-sidebar-right.html"> BOOKISH STUFF</a></li>
+                <li><a href="02-shop-sidebar-right.html"> HOBBY</a></li>
+                <li><a href="02-shop-sidebar-right.html"> JEWELRY</a></li>
+                <li><a href="02-shop-sidebar-right.html"> MEDICAL</a></li>
+                <li><a href="02-shop-sidebar-right.html"> RESEARCH &amp; DEVELOPMENT</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        
+        <!-- Second Row -->
+        <div class="col-md-6">
+          <ul class="row">
+            
+            <!-- TWITTER -->
+            <li class="col-sm-6">
+              <h5>SERVICES</h5>
+              <ul class="f-links">
+                <li><a href="07-faqs-page.html">3D SCANNING</a></li>
+                <li><a href="07-faqs-page.html"> 3D DESIGN &amp; WIREFRAMES</a></li>
+                <li><a href="07-faqs-page.html"> 3D PRINTING</a></li>
+                <li><a href="07-faqs-page.html"> LASER ENGRAVING</a></li>
+                <li><a href="07-faqs-page.html"> CNC</a></li>
+              </ul>
+            </li>
+            
+            <!-- FLICKR PHOTO -->
+            <li class="col-sm-6">
+              <h5>INSTAGRAM PHOTO STREAM</h5>
+              <ul class="flicker">
+                <li><a href="https://www.instagram.com/researchxdvlp/"><img src="images/flicker-1.jpg" alt=""></a></li>
+                <li><a href="https://www.instagram.com/researchxdvlp/"><img src="images/flicker-2.jpg" alt=""></a></li>
+                <li><a href="https://www.instagram.com/researchxdvlp/"><img src="images/flicker-3.jpg" alt=""></a></li>
+                <li><a href="https://www.instagram.com/researchxdvlp/"><img src="images/flicker-4.jpg" alt=""></a></li>
+                <li><a href="https://www.instagram.com/researchxdvlp/"><img src="images/flicker-5.jpg" alt=""></a></li>
+                <li><a href="https://www.instagram.com/researchxdvlp/"><img src="images/flicker-6.jpg" alt=""></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- Rights -->
+      <div class="rights">
+        <p>©2017 ResearchX Development. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <!-- GO TO TOP --> 
+  <a href="#" class="cd-top"><i class="fa fa-angle-up"></i></a> 
+  <!-- GO TO TOP End --> 
+</div>
+<!-- Wrap End --> 
+<script src="js/jquery-1.11.3.js"></script> 
+<script src="js/wow.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/own-menu.js"></script> 
+<script src="js/owl.carousel.min.js"></script> 
+<script src="js/jquery.magnific-popup.min.js"></script> 
+<script src="js/jquery.flexslider-min.js"></script> 
+<script src="js/jquery.isotope.min.js"></script> 
+
+<!-- SLIDER REVOLUTION 4.x SCRIPTS  --> 
+<script type="text/javascript" src="rs-plugin/js/jquery.themepunch.tools.min.js"></script> 
+<script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script> 
+<script src="js/main.js"></script>
+</body>
 </html>
