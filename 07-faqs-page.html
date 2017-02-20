@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ResearchX Development - 3D Printing and Scanning</title>
+<title>ResearchX Development - Servicii de printare 3D si scanare</title>
 <meta name="description" content="ResearchX Development - 3D Printing and Scanning">
 <meta name="author" content="WebWire">
 
@@ -20,6 +20,24 @@
 <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <!-- ADD YOUR OWN STYLING HERE. AVOID TO USE STYLE.CSS AND MAIN.CSS. IT WILL BE HELPFUL FOR YOU IN FUTURE UPDATES -->
 <link href="css/custom.css" rel="stylesheet" type="text/css">
+
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
 
 <!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
 <link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen" />
@@ -40,10 +58,9 @@
 <div id="loader">
   <div class="loader">
     <div class="position-center-center"> <img src="images/logo-dark.png" alt="">
-      
-      <p class="font-playfair text-center">Please Wait...</p>
+      <p class="font-playfair text-center">Se incarca...</p>
       <div class="loading">
-      	<div class="ball"></div>
+        <div class="ball"></div>
         <div class="ball"></div>
         <div class="ball"></div>
       </div>
@@ -55,17 +72,17 @@
 <div id="wrap">
   
   <!-- Header -->
-  <header class="header-style-2"> 
+  <header class="header header-dark"> 
     <!-- Top Bar -->
     <div class="top-bar">
       <div class="container"> 
         <!-- Language -->
-        <div class="language"> <a href="#." class="active">EN</a></div>
+        <div class="language"><a href="#." class="active">RO</a> <a href="/en/">EN</a></div>
         <div class="top-links">
           <ul>
-            <li><a href="coming-soon.html">MY ACCOUNT</a></li>
-            <li><a href="coming-soon.html">MY WISHLIST</a></li>
-            <li class="font-montserrat">CURRENCY:
+            <li><a href="coming-soon.html">CONTUL MEU</a></li>
+            <li><a href="coming-soon.html">WISHLIST-UL MEU</a></li>
+            <li class="font-montserrat">MONEDA:
               <select class="selectpicker">
                 <option>EURO</option>
                 <option>RON</option>
@@ -96,26 +113,26 @@
           <!-- MENU BUTTON RESPONSIVE -->
           <div class="menu-toggle"> <i class="fa fa-bars"> </i> </div>
           <ul class="ownmenu">
-            <li class="active"><a href="index.html">HOME</a></li>
-            <li><a href="05-about-us-01.html">ABOUT US</a></li>
-            <li><a href="02-shop-sidebar-right.html">SHOP</a></li>
-            <li><a href="07-faqs-page.html">SERVICES</a></li>
-            <li><a href="09-01-portfolio-grid.html">OUR WORK </a></li>
+            <li class="active"><a href="index.html">PRIMA PAGINA</a></li>
+            <li><a href="05-about-us-01.html">DESPRE NOI</a></li>
+            <li><a href="02-shop-sidebar-right.html">MAGAZIN</a></li>
+            <li><a href="07-faqs-page.html">SERVICII</a></li>
+            <li><a href="09-01-portfolio-grid.html">LUCRARILE NOASTRE </a></li>
             <li><a href="04-contact-01.html">CONTACT</a></li>
             
             <!--======= Shopping Cart =========-->
             <li class="shop-cart"><a href="#."><i class="fa fa-shopping-cart"></i></a> <span class="numb">0</span>
               <ul class="dropdown">
                 <li>
-                  <h5 class="text-center">Your cart is empty</h5>
+                  <h5 class="text-center">Cosul tau de cumparaturi este gol</h5>
                 </li>
                 <li class="no-padding no-border">
-                  <h5 class="text-center">SUBTOTAL: 0.00 EURO</h5>
+                  <h5 class="text-center">SUBTOTAL: 0.00 RON</h5>
                 </li>
                 <li class="no-padding no-border">
                   <div class="row">
-                    <div class="col-xs-6"> <a href="#." class="btn btn-small">VIEW CART</a></div>
-                    <div class="col-xs-6 "> <a href="#." class="btn btn-1 btn-small">CHECK OUT</a></div>
+                    <div class="col-xs-6"> <a href="#." class="btn btn-small">VEZI COSUL</a></div>
+                    <div class="col-xs-6 "> <a href="#." class="btn btn-1 btn-small">COMANDA</a></div>
                   </div>
                 </li>
               </ul>
@@ -126,13 +143,13 @@
                 <li class="row">
                   <div class="col-sm-4 no-padding">
                     <select class="selectpicker">
-                      <option>ALL</option>
-                      <option>HOME &amp; DESIGN</option>
-                      <option>BOOKISH STUFF</option>
+                      <option>TOATE</option>
+                      <option>CASA &amp; DESIGN</option>
+                      <option>PENTRU CARTI</option>
                       <option>HOBBY</option>
-                      <option>JEWELRY</option>
+                      <option>BIJUTERII</option>
                       <option>MEDICAL</option>
-                      <option>RESEARCH &amp; DEVELOPMENT</option>
+                      <option>CERCETARE &amp; DEZVOLTARE</option>
                     </select>
                   </div>
                   <div class="col-sm-8 no-padding">
@@ -155,11 +172,11 @@
     <!--======= SUB BANNER =========-->
     <section class="sub-banner animate fadeInUp" data-wow-delay="0.4s">
       <div class="container">
-        <h4>OUR SERVICES</h4>
+        <h4>SERVICIILE NOASTRE</h4>
         <!-- Breadcrumb -->
         <ol class="breadcrumb">
-          <li><a href="#">Home</a></li>
-          <li class="active">SERVICES</li>
+          <li><a href="#">Prima Pagina</a></li>
+          <li class="active">SERVICII</li>
         </ol>
       </div>
     </section>
@@ -174,11 +191,11 @@
                           
               <!-- FAQS NAV -->
               <ul class="cate faq-cate">
-                <li class="active"><a href="#." class="active"> Scanning and Printing Services</a></li>
-                <li><a href="#."> Creative Services</a></li>
-                <li><a href="#."> Medical Services</a></li>
-                <li><a href="#."> Industrial Industry</a></li>
-                <li><a href="#."> End User Services</a></li>
+                <li class="active"><a href="#." class="active"> Servicii de Scanare si Printare 3D</a></li>
+                <li><a href="#."> Servicii Creative</a></li>
+                <li><a href="#."> Servicii Tehnica Medicala</a></li>
+                <li><a href="#."> Servicii Industriale</a></li>
+                <li><a href="#."> Servicii pentru Utilizatori</a></li>
               </ul>
             </div>
           </div>
@@ -193,40 +210,40 @@
                 <!-- FAQS 1 -->
                 <div class="panel panel-default">
                   <div class="panel-heading">
-                    <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"> 3D Scanning</a> </h4>
+                    <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"> Scanare 3D</a> </h4>
                   </div>
                   <div id="collapseOne" class="panel-collapse collapse in">
-                    <div class="panel-body">Description coming soon ...</div>
+                    <div class="panel-body">Descrierea in curand ...</div>
                   </div>
                 </div>
                 
                 <!-- FAQS 2 -->
                 <div class="panel panel-default">
                   <div class="panel-heading">
-                    <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class="collapsed"> 3D Design and Wireframes</a> </h4>
+                    <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class="collapsed"> Design 3D si Proiectare</a> </h4>
                   </div>
                   <div id="collapseTwo" class="panel-collapse collapse">
-                    <div class="panel-body">Description coming soon ...</div>
+                    <div class="panel-body">Descrierea in curand ...</div>
                   </div>
                 </div>
                 
                 <!-- FAQS 3 -->
                 <div class="panel panel-default">
                   <div class="panel-heading">
-                    <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="collapsed"> 3D Printing</a> </h4>
+                    <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="collapsed"> Printare 3D</a> </h4>
                   </div>
                   <div id="collapseThree" class="panel-collapse collapse">
-                    <div class="panel-body">Description coming soon ...</div>
+                    <div class="panel-body">Descrierea in curand ...</div>
                   </div>
                 </div>
                 
                 <!-- FAQS 4 -->
                 <div class="panel panel-default">
                   <div class="panel-heading">
-                    <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapsefour" class="collapsed"> Laser Engraving</a> </h4>
+                    <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapsefour" class="collapsed"> Gravura Laser</a> </h4>
                   </div>
                   <div id="collapsefour" class="panel-collapse collapse">
-                    <div class="panel-body">Description coming soon ...</div>
+                    <div class="panel-body">Descrierea in curand ...</div>
                   </div>
                 </div>
                 
@@ -236,7 +253,7 @@
                     <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapsefive" class="collapsed"> CNC</a> </h4>
                   </div>
                   <div id="collapsefive" class="panel-collapse collapse">
-                    <div class="panel-body">Description coming soon ...</div>
+                    <div class="panel-body">Descrierea in curand ...</div>
                   </div>
                 </div>
               </div>
@@ -252,7 +269,7 @@
     <div class="container">
       <div class="text-center"> <a href="#."><img src="images/logo.png" alt=""></a><br>
         <img class="margin-t-40" src="images/hammer.png" alt="">
-        <p class="intro-small margin-t-40">Using tri-dimensional digital models we bring your inventions to life, we create prototypes with countless applications in various domains.</p>
+        <p class="intro-small margin-t-40">Folosind modele digitale tridimensionale dam viata inventiilor, cream prototipuri si modele cu aplicabilitate in nenumarate domenii.</p>
       </div>
       
       <!--  Footer Links -->
@@ -262,24 +279,24 @@
             
             <!--  INFOMATION -->
             <li class="col-sm-6">
-              <h5>INFOMATION</h5>
+              <h5>INFORMATII</h5>
               <ul class="f-links">
-                <li><a href="05-about-us-01.html">ABOUT US</a></li>
-                <li><a href="04-contact-01.html"> CONTACT US</a></li>
-                <li><a href="coming-soon.html"> TEMRS & CONDITIONS</a></li>
+                <li><a href="05-about-us-01.html">DESPRE NOI</a></li>
+                <li><a href="04-contact-01.html"> CONTACTEAZA-NE</a></li>
+                <li><a href="coming-soon.html"> TERMENI SI CONDITII</a></li>
               </ul>
             </li>
             
             <!-- MY ACCOUNT -->
             <li class="col-sm-6">
-              <h5>SHOP</h5>
+              <h5>MAGAZIN</h5>
               <ul class="f-links">
-                <li><a href="02-shop-sidebar-right.html">HOME &amp; DESIGN</a></li>
-                <li><a href="02-shop-sidebar-right.html"> BOOKISH STUFF</a></li>
+                <li><a href="02-shop-sidebar-right.html">CASA &amp; DESIGN</a></li>
+                <li><a href="02-shop-sidebar-right.html"> PENTRU CARTI</a></li>
                 <li><a href="02-shop-sidebar-right.html"> HOBBY</a></li>
-                <li><a href="02-shop-sidebar-right.html"> JEWELRY</a></li>
+                <li><a href="02-shop-sidebar-right.html"> BIJUTERII</a></li>
                 <li><a href="02-shop-sidebar-right.html"> MEDICAL</a></li>
-                <li><a href="02-shop-sidebar-right.html"> RESEARCH &amp; DEVELOPMENT</a></li>
+                <li><a href="02-shop-sidebar-right.html"> CERCETARE &amp; DEZVOLTARE</a></li>
               </ul>
             </li>
           </ul>
@@ -293,17 +310,17 @@
             <li class="col-sm-6">
               <h5>SERVICES</h5>
               <ul class="f-links">
-                <li><a href="07-faqs-page.html">3D SCANNING</a></li>
-                <li><a href="07-faqs-page.html"> 3D DESIGN &amp; WIREFRAMES</a></li>
-                <li><a href="07-faqs-page.html"> 3D PRINTING</a></li>
-                <li><a href="07-faqs-page.html"> LASER ENGRAVING</a></li>
+                <li><a href="07-faqs-page.html">SCANARE 3D</a></li>
+                <li><a href="07-faqs-page.html"> DESIGN 3D SI PROIECTARE</a></li>
+                <li><a href="07-faqs-page.html"> PRITNARE 3D</a></li>
+                <li><a href="07-faqs-page.html"> GRAVURA LASER</a></li>
                 <li><a href="07-faqs-page.html"> CNC</a></li>
               </ul>
             </li>
             
             <!-- FLICKR PHOTO -->
             <li class="col-sm-6">
-              <h5>INSTAGRAM PHOTO STREAM</h5>
+              <h5>DE PE INSTAGRAM</h5>
               <ul class="flicker">
                 <li><a href="https://www.instagram.com/researchxdvlp/"><img src="images/flicker-1.jpg" alt=""></a></li>
                 <li><a href="https://www.instagram.com/researchxdvlp/"><img src="images/flicker-2.jpg" alt=""></a></li>
@@ -319,10 +336,10 @@
       
       <!-- Rights -->
       <div class="rights">
-        <p>©2017 ResearchX Development. All Rights Reserved.</p>
+        <p>©2017 ResearchX Development. Toate drepturile rezervate.</p>
       </div>
     </div>
-  </footer> 
+  </footer>
   <!-- GO TO TOP --> 
   	<a href="#" class="cd-top"><i class="fa fa-angle-up"></i></a> 
   <!-- GO TO TOP End -->
